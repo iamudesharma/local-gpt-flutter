@@ -4,8 +4,12 @@ import 'package:local_gpt_flutter/page/chat_page.dart';
 import 'package:local_gpt_flutter/page/chat_with_pdf.dart';
 import 'package:local_gpt_flutter/page/code_page.dart';
 import 'package:local_gpt_flutter/page/image_page.dart';
+import 'package:syntax_highlight/syntax_highlight.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // Initialize the highlighter.
+  await Highlighter.initialize(['dart', 'yaml']);
   runApp(const MyApp());
 }
 

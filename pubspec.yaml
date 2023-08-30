@@ -41,8 +41,12 @@ dependencies:
   langchain_google: ^0.0.3
   file_picker: ^5.3.3
   syncfusion_flutter_pdf: ^22.2.9
+  rxdart: ^0.28.0-dev.0
+  flutter_markdown: ^0.6.17+2
   # langchain_google: ^0.0.3
-
+  text_highlight: ^1.0.3
+  syntax_highlight: ^0.2.0
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
